@@ -58,7 +58,6 @@ namespace jsonrpccxx {
       }
     }
 
-  private:
     json HandleSingleRequest(json &request) {
       json id = nullptr;
       if (valid_id(request)) {
