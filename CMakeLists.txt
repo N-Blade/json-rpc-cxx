@@ -10,7 +10,7 @@ include(GNUInstallDirs)
 
 add_library(json-rpc-cxx INTERFACE)
 target_include_directories(json-rpc-cxx INTERFACE include)
-target_link_libraries(json-rpc-cxx PRIVATE nlohmann_json::nlohmann_json)
+target_link_libraries(json-rpc-cxx INTERFACE nlohmann_json::nlohmann_json)
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 add_library(coverage_config INTERFACE)
